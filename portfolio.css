@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+
+
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    font-family: "Merriweather", serif;
+    background: whitesmoke;
+    color: rgb(27, 15, 15);
+    line-height: 1.45;
+    padding: 32px;
+    scroll-behavior: smooth;
+    
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    
+    
+    
+}
+
+
+
+
+.nav-bar{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    
+    padding: 0px;
+    border-radius: 5px;
+    
+    
+    
+}
+.aname{
+    color: blue;
+}
+
+
+.brand{
+    
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    position: fixed;
+    background-color: blue;
+    color: white;
+    width:79.5%;
+    border-radius: 10px;
+    
+}
+
+
+.logo{
+  margin-left: 10px;
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-weight: 800;
+    color: #c1ca09;
+    font-size: 20px;
+    box-shadow: 10px 6px 20px rgba(51, 5, 235, 0.16);
+    
+}
+
+.section_container{
+  display: flex;
+}
+
+.Profile{
+    
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    
+    border: 10px solid blue;
+    transition: 0.1s ease;
+    
+}
+
+.Profile:hover{
+    transform:scale(1.1);
+}
+
+.About{
+    height: 590px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-top: 55px;
+    
+}
+
+
+
+nav{
+    margin-left: 210px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+nav a{
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover{
+    color: azure;
+}
+
+.cta{
+    background: blue;
+    padding: 10px 14px;
+    border-radius: 12px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.1s ease-in-out;
+}
+.cta:hover{
+    transform: scale(1.2);
+    color: orange;
+}
+
+.header_content{
+    font-size: 20px;
+    width: 700px;
+}
+
+.btn-icon{
+  display: flex;
+  gap: 20px;
+}
+
+.icons{
+  display: flex;
+  gap: 20px;
+  font-size:30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bx{
+  border: 3px solid blue;
+  border-radius: 50%;
+  padding: 5px;
+  color: blue;
+}
+
+.header_content button{
+  margin-top: 3px;
+}
+
+button{
+    width: 130px;
+    height: 40px;
+    background: beige;
+    border-radius: 10px;
+    color: blue;
+    font-weight: 600;
+    box-shadow: 1px 2px 1px 2px lightblue;
+    border: 5px solid transparent;
+    animation: glow 1s infinite;
+    
+}
+
+@keyframes glow{
+  0%{
+    border-top-color: blue;
+    border-right-color:transparent ;
+    border-bottom-color:transparent ;
+    border-left-color:transparent ;
+  }
+  25%{
+    border-top-color: blue;
+    border-right-color:blue ;
+    border-bottom-color:transparent ;
+    border-left-color:transparent ;
+  }
+  50%{
+    border-top-color: blue;
+    border-right-color:blue ;
+    border-bottom-color:blue ;
+    border-left-color:transparent ;
+  }
+  75%{
+    border-top-color: blue;
+    border-right-color:blue ;
+    border-bottom-color:blue ;
+    border-left-color:blue ;
+  }
+  /* 100%{
+    border-top-color: gold;
+    border-right-color:gold ;
+    border-bottom-color:gold ;
+    border-left-color:gold ;
+  } */
+}
+
+button:hover{
+    opacity: 95%;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.des{
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-right: 1px solid #00ffff; /* cursor */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(25, end) infinite, blink 0.7s infinite;
+    color: red;
+}
+
+@keyframes typing {
+    from {width: 0;}
+    to {width: 25ch;}
+}
+
+@keyframes blink {
+    50% {border-color: transparent;}
+}
+
+.about_css{
+    text-align: center;
+}
+
+h2{
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+    
+}
+.about_div{
+    height: 500px;
+    background: blue;
+    border-radius: 10px;
+    color: white;
+    font-size: larger;
+    
+    padding-top: 100px;
+}
+.Home{
+    height: 600px;
+    padding: 50px;
+    margin-top: 100px;
+}
+#about{
+    height: 700px;
+}
+#skills{
+    padding: 35px;
+}
+.skill {
+  margin-bottom: 15px;
+  line-height: 4;
+}
+
+p {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.progress {
+  height: 100%;
+  text-align: right;
+  padding-right: 10px;
+  color: white;
+  line-height: 20px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.html { width: 90%; background: #f16529; animation: grow 2s forwards;}
+.css { width: 80%; background: #2965f1;  animation: grow 2s forwards;}
+.java { width: 85%; background: #f89820;  animation: grow 2s forwards;}
+.python { width: 60%; background: #3572A5;  animation: grow 2s forwards;}
+
+@keyframes grow {
+  from{width: 0%;}
+}
+
+.projects-section {
+  
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 800px;
+  margin: 50px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-left: 5px solid #2965f1;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: transform 0.1s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.contact-section {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form .btn{
+  align-self: center;
+}
+/* .contact-form .btn {
+  align-self: center;
+  background: #2965f1;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form .btn:hover {
+  background: #1748b5;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+} */
