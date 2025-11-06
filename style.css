@@ -21,9 +21,6 @@ body{
 .container{
     max-width: 1100px;
     margin: 0 auto;
-    
-    
-    
 }
 
 
@@ -388,3 +385,325 @@ p {
   background: #1748b5;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 } */
+
+
+
+/* ===============================
+   Responsive Design Section
+   =============================== */
+
+/* -------- For Tablets (max-width: 1024px) -------- */
+@media (max-width: 1024px) {
+  body {
+    padding: 16px;
+  }
+
+  .brand {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  nav {
+    margin-left: 0;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section_container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header_content {
+    width: 100%;
+  }
+
+  .Profile {
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+  }
+
+  .about_div {
+    height: auto;
+    padding: 30px;
+  }
+
+  .projects-section {
+    width: 95%;
+  }
+
+  .contact-section {
+    width: 90%;
+  }
+}
+
+/* -------- For Mobiles (max-width: 768px) -------- */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brand {
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  .name-sec {
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .cta {
+    display: block;
+    width: 80%;
+    text-align: center;
+  }
+
+  .section_container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header_content {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .Profile {
+    width: 200px;
+    height: 200px;
+  }
+
+  .btn-icon {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icons {
+    gap: 10px;
+    font-size: 25px;
+  }
+
+  .about_div {
+    padding: 20px;
+  }
+
+  .skill p {
+    font-size: 14px;
+  }
+
+  .progress-bar {
+    height: 16px;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .contact-section {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .des {
+    font-size: 1.5rem;
+  }
+}
+
+/* -------- For Very Small Devices (max-width: 480px) -------- */
+@media (max-width: 480px) {
+  .brand {
+    font-size: 14px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .header_content h1 {
+    font-size: 22px;
+  }
+
+  .header_content h3 {
+    font-size: 16px;
+  }
+
+  .Profile {
+    width: 150px;
+    height: 150px;
+  }
+
+  button {
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+ .about_css h2{
+  margin-top: 100px;
+ }
+
+  .project-card {
+    font-size: 14px;
+  }
+
+  .contact-form label {
+    font-size: 14px;
+  }
+}
+/* ===========================
+   Hamburger Menu (Mobile)
+   =========================== */
+
+.menu-toggle {
+  display: none;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1001;
+  }
+
+  .nav_menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    width: 85%;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1000;
+  }
+
+  .nav_menu.active {
+    display: flex;
+  }
+
+  .nav_menu a {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 18px;
+    color: white;
+  }
+
+  .nav_menu a:hover {
+    color: orange;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+  }
+}
+
+
+
+/* ===========================
+   Animated Hamburger Menu
+   =========================== */
+.menu-toggle {
+  display: none;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1001;
+  }
+
+  .nav_menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    width: 85%;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1000;
+
+    /* animation setup */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+  }
+
+  .nav_menu.active {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav_menu a {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 18px;
+    color: white;
+  }
+
+  .nav_menu a:hover {
+    color: orange;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+  }
+}
+
