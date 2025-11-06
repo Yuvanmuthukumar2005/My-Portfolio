@@ -20,13 +20,19 @@
                     <div class="subtitle">Java Full Stack Developer - Story Writter</div>
                 </div>
             
-            <nav class="nav_menu">
-                <a href="portfolio.html" class="cta">Home</a>
-                <a href="#about" class="cta">About</a>
-                <a href="#skills" class="cta">Skills</a>
-                <a href="#projects" class="cta">Projects</a>
-                <a href="#contact" class="cta">Contact</a>
+            <nav class="nav_menu" id="navMenu">
+            <a href="portfolio.html" class="cta">Home</a>
+            <a href="#about" class="cta">About</a>
+            <a href="#skills" class="cta">Skills</a>
+            <a href="#projects" class="cta">Projects</a>
+            <a href="#contact" class="cta">Contact</a>
             </nav>
+
+            <!-- Hamburger Icon -->
+            <div class="menu-toggle" id="menuToggle">
+              <i class='bx bx-menu' style="color: white;"></i>
+            </div>
+
             </div>
           
             
@@ -146,7 +152,17 @@
   </div>
     </section>
     </div>
+
+    <script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    menuToggle.querySelector('i').classList.toggle('bx-x');
+  });
+</script>
+
 </body>
 </html>
-
 
